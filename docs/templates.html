@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agentes de IA pre-configurados listos para usar. Soporte al cliente, tutor educativo y asistente personal.">
+    <link rel="icon" type="image/png" href="natalie-avatar.png">
+    <title>Agentes Listos - UnderRepresented Agents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Language selector -->
+    <nav class="lang-bar" aria-label="Seleccionar idioma">
+        <button class="lang-btn active" data-lang="es" aria-pressed="true">Castellano</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+        <button class="lang-btn" data-lang="pt" aria-pressed="false">Portugues</button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero hero-small">
+        <h1 data-i18n="tpl_hero_title">Agentes listos para usar</h1>
+        <p class="hero-sub" data-i18n="tpl_hero_sub">Copia, pega y listo. Agentes profesionales creados para ti.</p>
+        <a href="index.html" class="btn-secondary" data-i18n="tpl_back_wizard">Volver al wizard</a>
+    </header>
+
+    <main id="main">
+        <!-- How it works -->
+        <section class="section">
+            <h2 data-i18n="tpl_how_title">¿Cómo funcionan?</h2>
+            <p data-i18n="tpl_how_desc">Estos agentes son prompts profesionales listos para copiar y pegar. Son más completos que lo que genera el wizard porque están diseñados por especialistas para casos específicos.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 data-i18n="tpl_step1">1. Elige</h3>
+                    <p data-i18n="tpl_step1_desc">Escoge el agente que necesitas.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="tpl_step2">2. Copia</h3>
+                    <p data-i18n="tpl_step2_desc">Usa el botón para copiar el texto.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="tpl_step3">3. Pega</h3>
+                    <p data-i18n="tpl_step3_desc">Pégalo en Claude, ChatGPT o Gemini.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Template: Customer Support -->
+        <section class="section template-section">
+            <div class="template-header">
+                <span class="template-icon">&#x1f4ac;</span>
+                <div>
+                    <h2 data-i18n="tpl_cs_title">Soporte al Cliente Inclusivo</h2>
+                    <p data-i18n="tpl_cs_desc">Un agente que atiende a tus clientes con paciencia, respeto y claridad. Ideal para negocios que quieren que todos sus clientes se sientan bienvenidos.</p>
+                </div>
+            </div>
+            <div class="template-features">
+                <span class="tag" data-i18n="tpl_tag_patience">Paciente</span>
+                <span class="tag" data-i18n="tpl_tag_step">Paso a paso</span>
+                <span class="tag" data-i18n="tpl_tag_accessible">Accesible</span>
+                <span class="tag" data-i18n="tpl_tag_business">Negocios</span>
+            </div>
+            <div id="cs-prompt" class="result-box template-prompt"></div>
+            <button class="btn-primary copy-tpl-btn" data-target="cs-prompt" data-i18n="tpl_copy">Copiar este agente</button>
+            <p class="copy-tpl-confirm hidden" data-i18n="s7_copied">¡Copiado!</p>
+        </section>
+
+        <!-- Template: Educational -->
+        <section class="section template-section">
+            <div class="template-header">
+                <span class="template-icon">&#x1f4d6;</span>
+                <div>
+                    <h2 data-i18n="tpl_edu_title">Tutor Educativo Adaptativo</h2>
+                    <p data-i18n="tpl_edu_desc">Un tutor que se adapta a tu ritmo, celebra tus avances y nunca te hace sentir mal por no saber algo. Perfecto para aprender cualquier tema.</p>
+                </div>
+            </div>
+            <div class="template-features">
+                <span class="tag" data-i18n="tpl_tag_adaptive">Adaptativo</span>
+                <span class="tag" data-i18n="tpl_tag_motivating">Motivador</span>
+                <span class="tag" data-i18n="tpl_tag_accessible">Accesible</span>
+                <span class="tag" data-i18n="tpl_tag_education">Educación</span>
+            </div>
+            <div id="edu-prompt" class="result-box template-prompt"></div>
+            <button class="btn-primary copy-tpl-btn" data-target="edu-prompt" data-i18n="tpl_copy">Copiar este agente</button>
+            <p class="copy-tpl-confirm hidden" data-i18n="s7_copied">¡Copiado!</p>
+        </section>
+
+        <!-- Template: Personal Assistant -->
+        <section class="section template-section">
+            <div class="template-header">
+                <span class="template-icon">&#x1f4cb;</span>
+                <div>
+                    <h2 data-i18n="tpl_pa_title">Asistente Personal Accesible</h2>
+                    <p data-i18n="tpl_pa_desc">Un asistente para el día a día: organizar tareas, redactar mensajes, buscar información. Como un amigo organizado que siempre está disponible.</p>
+                </div>
+            </div>
+            <div class="template-features">
+                <span class="tag" data-i18n="tpl_tag_organized">Organizado</span>
+                <span class="tag" data-i18n="tpl_tag_patience">Paciente</span>
+                <span class="tag" data-i18n="tpl_tag_accessible">Accesible</span>
+                <span class="tag" data-i18n="tpl_tag_daily">Día a día</span>
+            </div>
+            <div id="pa-prompt" class="result-box template-prompt"></div>
+            <button class="btn-primary copy-tpl-btn" data-target="pa-prompt" data-i18n="tpl_copy">Copiar este agente</button>
+            <p class="copy-tpl-confirm hidden" data-i18n="s7_copied">¡Copiado!</p>
+        </section>
+
+        <!-- Community CTA -->
+        <section class="section">
+            <div class="next-level-box">
+                <h3 data-i18n="tpl_community_title">¿Quieres más?</h3>
+                <p data-i18n="tpl_community_desc">Estamos creando más agentes, sesiones guiadas y una comunidad. Regístrate para que te avisemos cuando haya cosas nuevas.</p>
+                <a href="#GOOGLE_FORM_URL" target="_blank" rel="noopener" class="btn-primary btn-next-level" data-i18n="next_cta">Quiero participar</a>
+                <p class="next-note" data-i18n="next_note">Es gratis. Solo pedimos tu nombre y correo para poder organizarnos.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-author">
+            <a href="https://natalie.uno" target="_blank" rel="noopener">
+                <img src="natalie-avatar.png" alt="Natalie Gil" class="footer-avatar" width="72" height="72">
+            </a>
+            <div class="footer-author-info">
+                <p class="footer-tagline" data-i18n="footer_project">De Natalie Gil para la comunidad</p>
+            </div>
+        </div>
+        <div class="footer-cta">
+            <a href="https://github.com/ratalie" target="_blank" rel="noopener" class="btn-github" data-i18n="footer_star">⭐ Dale estrella al proyecto en GitHub</a>
+            <a href="https://github.com/ratalie" target="_blank" rel="noopener" class="btn-github btn-github-follow" data-i18n="footer_follow">Sígueme en GitHub</a>
+            <a href="https://buymeacoffee.com/zidojuliju" target="_blank" rel="noopener" class="btn-coffee">☕ Buy me a coffee</a>
+        </div>
+        <p class="footer-license">MIT License · 2026</p>
+    </footer>
+
+    <script src="i18n-templates.js"></script>
+</body>
+</html>

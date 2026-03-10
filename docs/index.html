@@ -149,12 +149,86 @@
                     </ul>
                 </div>
 
+                <!-- Save permanently -->
+                <div class="save-permanent">
+                    <h3 data-i18n="save_title">Guárdalo para no repetir</h3>
+                    <p data-i18n="save_desc">En vez de pegar el texto cada vez, puedes guardarlo dentro de la plataforma. Así tu asistente está listo siempre.</p>
+                    <div class="platform-cards">
+                        <div class="platform-card">
+                            <strong>ChatGPT</strong>
+                            <p data-i18n="save_chatgpt">Gratis: Ve a Configuración > Personalización > Instrucciones personalizadas y pega tu texto ahí. Se aplica a todas tus conversaciones nuevas automáticamente.</p>
+                        </div>
+                        <div class="platform-card">
+                            <strong>Claude</strong>
+                            <p data-i18n="save_claude">Gratis: Abre una conversación, pega el texto, y usa el icono de estrella para guardarla. También puedes crear un Proyecto (gratis) y pegar el texto en las instrucciones del proyecto.</p>
+                        </div>
+                        <div class="platform-card">
+                            <strong>Gemini</strong>
+                            <p data-i18n="save_gemini">Gratis: Pega el texto al inicio de cada conversación. También puedes guardar la conversación y Gemini recordará el contexto si la retomas.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <button id="restart-btn" class="btn-secondary" data-i18n="s7_restart">Crear otro asistente</button>
 
-                <!-- Step 2 CTA -->
+                <!-- How to use instructions -->
+                <div class="how-to-use">
+                    <h3 data-i18n="how_title">¿Cómo lo uso después?</h3>
+                    <div class="how-steps">
+                        <div class="how-step">
+                            <span class="how-number">1</span>
+                            <div>
+                                <strong data-i18n="how_save_title">Guarda tu texto</strong>
+                                <p data-i18n="how_save_desc">Copia el texto generado y guárdalo en un lugar seguro: un archivo de texto, una nota en tu celular, o un documento. Así lo tendrás siempre a mano.</p>
+                            </div>
+                        </div>
+                        <div class="how-step">
+                            <span class="how-number">2</span>
+                            <div>
+                                <strong data-i18n="how_paste_title">Pégalo cada vez que empieces</strong>
+                                <p data-i18n="how_paste_desc">Cada vez que abras una conversación nueva en Claude, ChatGPT o Gemini, pega el texto como primer mensaje. La IA se convierte en tu asistente personalizado durante toda esa conversación.</p>
+                            </div>
+                        </div>
+                        <div class="how-step">
+                            <span class="how-number">3</span>
+                            <div>
+                                <strong data-i18n="how_talk_title">Habla normal</strong>
+                                <p data-i18n="how_talk_desc">Después de pegar el texto, simplemente escribe lo que necesitas como si hablaras con una persona. Tu asistente ya sabe cómo ayudarte.</p>
+                            </div>
+                        </div>
+                        <div class="how-step">
+                            <span class="how-number">4</span>
+                            <div>
+                                <strong data-i18n="how_improve_title">Mejóralo con el tiempo</strong>
+                                <p data-i18n="how_improve_desc">Si quieres cambiar algo, puedes volver aquí y crear uno nuevo, o simplemente decirle a la IA: "A partir de ahora también quiero que..." y se adapta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tips for going further -->
+                <div class="tips-box">
+                    <h3 data-i18n="tips_title">Consejos para sacarle más provecho</h3>
+                    <ul>
+                        <li data-i18n="tips_1"><strong>Sé específico:</strong> En vez de "ayúdame", di "ayúdame a escribir un correo para mi jefe pidiendo vacaciones". Mientras más detalle, mejor respuesta.</li>
+                        <li data-i18n="tips_2"><strong>Pide que corrija:</strong> Si algo no te gusta, dile "eso no es lo que necesito, quiero algo más..." y te dará otra versión.</li>
+                        <li data-i18n="tips_3"><strong>Usa la misma conversación:</strong> Mientras no cierres la conversación, la IA recuerda todo lo que hablaron. Aprovecha eso.</li>
+                        <li data-i18n="tips_4"><strong>Pide ejemplos:</strong> Si no entiendes algo, dile "dame un ejemplo" o "explícamelo de otra forma".</li>
+                        <li data-i18n="tips_5"><strong>No tengas miedo de equivocarte:</strong> No hay preguntas tontas. La IA está configurada para ser paciente contigo.</li>
+                    </ul>
+                </div>
+
+                <!-- Step 2: Templates -->
                 <div class="next-level-box">
                     <h3 data-i18n="next_title">¿Quieres ir más allá?</h3>
-                    <p data-i18n="next_desc">Tenemos recursos gratuitos para que puedas hacer más: agentes pre-configurados, sesiones guiadas y una comunidad. Como los recursos son limitados, nos registramos para que alcancen para todos.</p>
+                    <p data-i18n="next_desc_v2">Tenemos agentes profesionales listos para usar: soporte al cliente, tutor educativo y asistente personal. Más completos y diseñados para casos específicos.</p>
+                    <a href="templates.html" class="btn-primary btn-next-level" data-i18n="next_cta_templates">Ver agentes profesionales</a>
+                </div>
+
+                <!-- Step 3: Community -->
+                <div class="next-level-box community-box">
+                    <h3 data-i18n="community_title">Únete a la comunidad</h3>
+                    <p data-i18n="community_desc">Sesiones guiadas, más agentes y una comunidad de personas como tú. Como los recursos son limitados, nos registramos para que alcancen para todos.</p>
                     <a href="#GOOGLE_FORM_URL" target="_blank" rel="noopener" class="btn-primary btn-next-level" data-i18n="next_cta">Quiero participar</a>
                     <p class="next-note" data-i18n="next_note">Es gratis. Solo pedimos tu nombre y correo para poder organizarnos.</p>
                 </div>
@@ -164,12 +238,10 @@
 
     <footer>
         <div class="footer-author">
-            <a href="https://github.com/ratalie" target="_blank" rel="noopener">
+            <a href="https://natalie.uno" target="_blank" rel="noopener">
                 <img src="natalie-avatar.png" alt="Natalie Gil" class="footer-avatar" width="72" height="72">
             </a>
             <div class="footer-author-info">
-                <p class="footer-name">Natalie Gil</p>
-                <p class="footer-bio" data-i18n="footer_bio">MIT Sloan Fellow · Diversity Advocate · Founder @LatinityConf</p>
                 <p class="footer-tagline" data-i18n="footer_project">De Natalie Gil para la comunidad</p>
             </div>
         </div>

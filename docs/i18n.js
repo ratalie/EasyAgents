@@ -78,14 +78,39 @@ const translations = {
         acc_none: "Ninguna",
         // Next level
         next_title: "¿Quieres ir más allá?",
-        next_desc: "Tenemos recursos gratuitos para que puedas hacer más: agentes pre-configurados, sesiones guiadas y una comunidad. Como los recursos son limitados, nos registramos para que alcancen para todos.",
+        next_desc_v2: "Tenemos agentes profesionales listos para usar: soporte al cliente, tutor educativo y asistente personal. Más completos y diseñados para casos específicos.",
+        next_cta_templates: "Ver agentes profesionales",
+        community_title: "Únete a la comunidad",
+        community_desc: "Sesiones guiadas, más agentes y una comunidad de personas como tú. Como los recursos son limitados, nos registramos para que alcancen para todos.",
         next_cta: "Quiero participar",
         next_note: "Es gratis. Solo pedimos tu nombre y correo para poder organizarnos.",
+        // Save permanently
+        save_title: "Guárdalo para no repetir",
+        save_desc: "En vez de pegar el texto cada vez, puedes guardarlo dentro de la plataforma. Así tu asistente está listo siempre.",
+        save_chatgpt: "Gratis: Ve a Configuración > Personalización > Instrucciones personalizadas y pega tu texto ahí. Se aplica a todas tus conversaciones nuevas automáticamente.",
+        save_claude: "Gratis: Abre una conversación, pega el texto, y usa el icono de estrella para guardarla. También puedes crear un Proyecto (gratis) y pegar el texto en las instrucciones del proyecto.",
+        save_gemini: "Gratis: Pega el texto al inicio de cada conversación. También puedes guardar la conversación y Gemini recordará el contexto si la retomas.",
+        // How to use
+        how_title: "¿Cómo lo uso después?",
+        how_save_title: "Guarda tu texto",
+        how_save_desc: "Copia el texto generado y guárdalo en un lugar seguro: un archivo de texto, una nota en tu celular, o un documento. Así lo tendrás siempre a mano.",
+        how_paste_title: "Pégalo cada vez que empieces",
+        how_paste_desc: "Cada vez que abras una conversación nueva en Claude, ChatGPT o Gemini, pega el texto como primer mensaje. La IA se convierte en tu asistente personalizado durante toda esa conversación.",
+        how_talk_title: "Habla normal",
+        how_talk_desc: "Después de pegar el texto, simplemente escribe lo que necesitas como si hablaras con una persona. Tu asistente ya sabe cómo ayudarte.",
+        how_improve_title: "Mejóralo con el tiempo",
+        how_improve_desc: "Si quieres cambiar algo, puedes volver aquí y crear uno nuevo, o simplemente decirle a la IA: \"A partir de ahora también quiero que...\" y se adapta.",
+        // Tips
+        tips_title: "Consejos para sacarle más provecho",
+        tips_1: "<strong>Sé específico:</strong> En vez de \"ayúdame\", di \"ayúdame a escribir un correo para mi jefe pidiendo vacaciones\". Mientras más detalle, mejor respuesta.",
+        tips_2: "<strong>Pide que corrija:</strong> Si algo no te gusta, dile \"eso no es lo que necesito, quiero algo más...\" y te dará otra versión.",
+        tips_3: "<strong>Usa la misma conversación:</strong> Mientras no cierres la conversación, la IA recuerda todo lo que hablaron. Aprovecha eso.",
+        tips_4: "<strong>Pide ejemplos:</strong> Si no entiendes algo, dile \"dame un ejemplo\" o \"explícamelo de otra forma\".",
+        tips_5: "<strong>No tengas miedo de equivocarte:</strong> No hay preguntas tontas. La IA está configurada para ser paciente contigo.",
         // Footer
         footer_project: "De Natalie Gil para la comunidad",
         footer_star: "⭐ Dale estrella al proyecto en GitHub",
         footer_follow: "Sígueme en GitHub",
-        footer_bio: "MIT Sloan Fellow · Diversity Advocate · Founder @LatinityConf",
     },
 
     en: {
@@ -163,14 +188,39 @@ const translations = {
         acc_none: "None",
         // Next level
         next_title: "Want to go further?",
-        next_desc: "We have free resources so you can do more: pre-configured agents, guided sessions, and a community. Since resources are limited, we ask you to sign up so there's enough for everyone.",
+        next_desc_v2: "We have professional agents ready to use: customer support, educational tutor and personal assistant. More complete and designed for specific use cases.",
+        next_cta_templates: "See professional agents",
+        community_title: "Join the community",
+        community_desc: "Guided sessions, more agents and a community of people like you. Since resources are limited, we ask you to sign up so there's enough for everyone.",
         next_cta: "I want to participate",
         next_note: "It's free. We only ask your name and email so we can organize.",
+        // Save permanently
+        save_title: "Save it so you don't have to repeat",
+        save_desc: "Instead of pasting the text every time, you can save it inside the platform. That way your assistant is always ready.",
+        save_chatgpt: "Free: Go to Settings > Personalization > Custom Instructions and paste your text there. It applies to all your new conversations automatically.",
+        save_claude: "Free: Open a conversation, paste the text, and use the star icon to save it. You can also create a Project (free) and paste the text in the project instructions.",
+        save_gemini: "Free: Paste the text at the beginning of each conversation. You can also save the conversation and Gemini will remember the context if you come back to it.",
+        // How to use
+        how_title: "How do I use it afterwards?",
+        how_save_title: "Save your text",
+        how_save_desc: "Copy the generated text and save it somewhere safe: a text file, a note on your phone, or a document. That way you'll always have it handy.",
+        how_paste_title: "Paste it every time you start",
+        how_paste_desc: "Every time you open a new conversation in Claude, ChatGPT or Gemini, paste the text as the first message. The AI becomes your personalized assistant for that entire conversation.",
+        how_talk_title: "Just talk normally",
+        how_talk_desc: "After pasting the text, simply write what you need as if you were talking to a person. Your assistant already knows how to help you.",
+        how_improve_title: "Improve it over time",
+        how_improve_desc: "If you want to change something, you can come back here and create a new one, or simply tell the AI: \"From now on I also want you to...\" and it adapts.",
+        // Tips
+        tips_title: "Tips to get more out of it",
+        tips_1: "<strong>Be specific:</strong> Instead of \"help me\", say \"help me write an email to my boss asking for vacation\". The more detail, the better the response.",
+        tips_2: "<strong>Ask for corrections:</strong> If you don't like something, tell it \"that's not what I need, I want something more...\" and it will give you another version.",
+        tips_3: "<strong>Use the same conversation:</strong> As long as you don't close the conversation, the AI remembers everything you talked about. Take advantage of that.",
+        tips_4: "<strong>Ask for examples:</strong> If you don't understand something, tell it \"give me an example\" or \"explain it to me differently\".",
+        tips_5: "<strong>Don't be afraid of making mistakes:</strong> There are no silly questions. The AI is configured to be patient with you.",
         // Footer
         footer_project: "From Natalie Gil for the community",
         footer_star: "⭐ Star the project on GitHub",
         footer_follow: "Follow me on GitHub",
-        footer_bio: "MIT Sloan Fellow · Diversity Advocate · Founder @LatinityConf",
     },
 
     pt: {
@@ -248,14 +298,39 @@ const translations = {
         acc_none: "Nenhuma",
         // Next level
         next_title: "Quer ir além?",
-        next_desc: "Temos recursos gratuitos pra você fazer mais: agentes pré-configurados, sessões guiadas e uma comunidade. Como os recursos são limitados, pedimos que se registre pra que dê pra todos.",
+        next_desc_v2: "Temos agentes profissionais prontos pra usar: suporte ao cliente, tutor educativo e assistente pessoal. Mais completos e feitos pra casos específicos.",
+        next_cta_templates: "Ver agentes profissionais",
+        community_title: "Entra na comunidade",
+        community_desc: "Sessões guiadas, mais agentes e uma comunidade de pessoas como você. Como os recursos são limitados, pedimos que se registre pra que dê pra todos.",
         next_cta: "Quero participar",
         next_note: "É de graça. Só pedimos seu nome e email pra gente se organizar.",
+        // Save permanently
+        save_title: "Salva pra não ter que repetir",
+        save_desc: "Em vez de colar o texto toda vez, você pode salvar dentro da plataforma. Assim seu assistente tá sempre pronto.",
+        save_chatgpt: "Grátis: Vai em Configurações > Personalização > Instruções personalizadas e cola seu texto lá. Se aplica a todas as suas conversas novas automaticamente.",
+        save_claude: "Grátis: Abre uma conversa, cola o texto, e usa o ícone de estrela pra salvar. Você também pode criar um Projeto (grátis) e colar o texto nas instruções do projeto.",
+        save_gemini: "Grátis: Cola o texto no início de cada conversa. Você também pode salvar a conversa e o Gemini vai lembrar o contexto se você voltar nela.",
+        // How to use
+        how_title: "Como eu uso depois?",
+        how_save_title: "Salva seu texto",
+        how_save_desc: "Copia o texto gerado e salva num lugar seguro: um arquivo de texto, uma nota no celular, ou um documento. Assim você sempre vai ter ele à mão.",
+        how_paste_title: "Cola toda vez que começar",
+        how_paste_desc: "Toda vez que abrir uma conversa nova no Claude, ChatGPT ou Gemini, cola o texto como primeira mensagem. A IA vira seu assistente personalizado durante toda aquela conversa.",
+        how_talk_title: "Fala normal",
+        how_talk_desc: "Depois de colar o texto, só escreve o que você precisa como se tivesse falando com uma pessoa. Seu assistente já sabe como te ajudar.",
+        how_improve_title: "Melhora com o tempo",
+        how_improve_desc: "Se quiser mudar algo, pode voltar aqui e criar um novo, ou simplesmente falar pra IA: \"A partir de agora eu também quero que...\" e ela se adapta.",
+        // Tips
+        tips_title: "Dicas pra aproveitar melhor",
+        tips_1: "<strong>Seja específico:</strong> Em vez de \"me ajuda\", fala \"me ajuda a escrever um email pro meu chefe pedindo férias\". Quanto mais detalhe, melhor a resposta.",
+        tips_2: "<strong>Peça pra corrigir:</strong> Se não curtiu algo, fala \"não é isso que preciso, quero algo mais...\" e vai te dar outra versão.",
+        tips_3: "<strong>Use a mesma conversa:</strong> Enquanto não fechar a conversa, a IA lembra de tudo que vocês falaram. Aproveita isso.",
+        tips_4: "<strong>Peça exemplos:</strong> Se não entendeu algo, fala \"me dá um exemplo\" ou \"me explica de outro jeito\".",
+        tips_5: "<strong>Não tenha medo de errar:</strong> Não tem pergunta boba. A IA tá configurada pra ter paciência com você.",
         // Footer
         footer_project: "Da Natalie Gil pra comunidade",
         footer_star: "⭐ Dá uma estrela no projeto no GitHub",
         footer_follow: "Me segue no GitHub",
-        footer_bio: "MIT Sloan Fellow · Diversity Advocate · Founder @LatinityConf",
     }
 };
 
