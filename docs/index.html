@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crea tu propio asistente de IA accesible e inclusivo. Sin programar, sin pagar. Para todos.">
+    <meta property="og:title" content="UnderRepresented Agents - Crea tu asistente de IA">
+    <meta property="og:description" content="Herramientas para hacer que los agentes de IA sean accesibles para todos. Wizard interactivo en español, inglés y portugués.">
+    <meta property="og:type" content="website">
+    <title>UnderRepresented Agents - Crea tu asistente de IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Language selector -->
+    <nav class="lang-bar" aria-label="Seleccionar idioma">
+        <button class="lang-btn active" data-lang="es" aria-pressed="true">Castellano</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+        <button class="lang-btn" data-lang="pt" aria-pressed="false">Portugues</button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1 data-i18n="hero_title">Crea tu propio asistente de IA</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Sin programar. Sin pagar. Para todos.</p>
+        <button id="start-btn" class="btn-primary btn-large" data-i18n="hero_cta">Empezar</button>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main">
+
+        <!-- Intro section -->
+        <section id="intro" class="section">
+            <h2 data-i18n="intro_title">Que es esto?</h2>
+            <p data-i18n="intro_p1">Esta herramienta te ayuda a crear un asistente virtual personalizado. Tu respondes unas preguntas simples y nosotros generamos las instrucciones listas para usar.</p>
+            <p data-i18n="intro_p2">Despues copias esas instrucciones en cualquier chat de IA gratuito (Claude, ChatGPT, Gemini) y listo: tienes tu propio asistente.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3 data-i18n="card1_title">Gratis</h3>
+                    <p data-i18n="card1_text">No necesitas pagar nada. Usa tu cuenta gratuita de cualquier IA.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="card2_title">Sin codigo</h3>
+                    <p data-i18n="card2_text">Solo responde preguntas. Nosotros generamos todo por ti.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="card3_title">Accesible</h3>
+                    <p data-i18n="card3_text">Disenado para que cualquier persona pueda usarlo, sin importar su experiencia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WIZARD -->
+        <section id="wizard" class="section hidden" aria-live="polite">
+            <div class="wizard-progress">
+                <span id="wizard-step-label" data-i18n="step_label">Paso 1 de 6</span>
+                <div class="progress-bar"><div id="progress-fill" class="progress-fill" style="width: 16.6%"></div></div>
+            </div>
+
+            <!-- Step 1: Who is it for -->
+            <div class="wizard-step active" data-step="1">
+                <h2 data-i18n="s1_title">Para quien es tu asistente?</h2>
+                <p data-i18n="s1_desc">Primero dime: quien va a usar este asistente?</p>
+                <div class="options">
+                    <button class="option-btn" data-value="personal" data-i18n="s1_a">Para mi uso personal</button>
+                    <button class="option-btn" data-value="business" data-i18n="s1_b">Para mi negocio o trabajo</button>
+                    <button class="option-btn" data-value="others" data-i18n="s1_c">Para ayudar a otras personas</button>
+                    <button class="option-btn" data-value="explore" data-i18n="s1_d">No estoy seguro/a, quiero explorar</button>
+                </div>
+            </div>
+
+            <!-- Step 2: The problem -->
+            <div class="wizard-step" data-step="2">
+                <h2 data-i18n="s2_title">Que problema quieres resolver?</h2>
+                <p data-i18n="s2_desc">Dilo como se lo dirias a un amigo. No necesitas palabras tecnicas.</p>
+                <div class="examples">
+                    <p data-i18n="s2_examples"><strong>Ejemplos:</strong> "Quiero algo que responda preguntas de mis clientes" / "Necesito ayuda para organizar mi dia" / "Quiero algo que me ayude a estudiar"</p>
+                </div>
+                <textarea id="problem-input" rows="4" placeholder="" data-i18n-placeholder="s2_placeholder" aria-label="Describe el problema que quieres resolver"></textarea>
+                <button class="btn-primary wizard-next" data-i18n="next_btn">Siguiente</button>
+            </div>
+
+            <!-- Step 3: Personality -->
+            <div class="wizard-step" data-step="3">
+                <h2 data-i18n="s3_title">Como quieres que se comunique?</h2>
+                <p data-i18n="s3_desc">Elige la personalidad de tu asistente.</p>
+                <div class="options">
+                    <button class="option-btn" data-value="formal" data-i18n="s3_a">Formal y profesional</button>
+                    <button class="option-btn" data-value="friendly" data-i18n="s3_b">Amigable y cercano</button>
+                    <button class="option-btn" data-value="patient" data-i18n="s3_c">Paciente y detallado</button>
+                    <button class="option-btn" data-value="direct" data-i18n="s3_d">Directo y al grano</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Accessibility -->
+            <div class="wizard-step" data-step="4">
+                <h2 data-i18n="s4_title">Hay alguna necesidad especial?</h2>
+                <p data-i18n="s4_desc">Puedes elegir varias opciones. Esto adapta tu asistente para que sea mas accesible.</p>
+                <div class="options multi">
+                    <button class="option-btn toggle" data-value="screen-reader" data-i18n="s4_a">Uso de lector de pantalla</button>
+                    <button class="option-btn toggle" data-value="simple-language" data-i18n="s4_b">Explicaciones muy simples</button>
+                    <button class="option-btn toggle" data-value="step-by-step" data-i18n="s4_c">Todo paso a paso con paciencia</button>
+                    <button class="option-btn toggle" data-value="low-overwhelm" data-i18n="s4_d">Poca informacion a la vez</button>
+                    <button class="option-btn toggle" data-value="none" data-i18n="s4_e">Ninguna en particular</button>
+                </div>
+                <button class="btn-primary wizard-next" data-i18n="next_btn">Siguiente</button>
+            </div>
+
+            <!-- Step 5: Limits -->
+            <div class="wizard-step" data-step="5">
+                <h2 data-i18n="s5_title">Hay algo que NO debe hacer?</h2>
+                <p data-i18n="s5_desc">Define limites para tu asistente. Si no se te ocurre nada, puedes dejarlo vacio.</p>
+                <div class="examples">
+                    <p data-i18n="s5_examples"><strong>Ejemplos:</strong> "No dar consejos medicos" / "No hablar de politica" / "No compartir datos personales"</p>
+                </div>
+                <textarea id="limits-input" rows="3" placeholder="" data-i18n-placeholder="s5_placeholder" aria-label="Define los limites de tu asistente"></textarea>
+                <button class="btn-primary wizard-next" data-i18n="next_btn">Siguiente</button>
+            </div>
+
+            <!-- Step 6: Summary & Generate -->
+            <div class="wizard-step" data-step="6">
+                <h2 data-i18n="s6_title">Tu asistente esta listo!</h2>
+                <p data-i18n="s6_desc">Revisa el resumen. Si quieres cambiar algo, usa el boton "Atras".</p>
+
+                <div id="summary" class="summary-box"></div>
+
+                <button id="generate-btn" class="btn-primary btn-large" data-i18n="s6_generate">Generar mi asistente</button>
+                <button class="btn-secondary wizard-back" data-i18n="back_btn">Atras</button>
+            </div>
+
+            <!-- Result -->
+            <div class="wizard-step" data-step="7">
+                <h2 data-i18n="s7_title">Aqui esta tu asistente!</h2>
+                <p data-i18n="s7_desc">Copia el texto de abajo y pegalo como primer mensaje en tu chat de IA favorito.</p>
+
+                <div id="result-prompt" class="result-box"></div>
+                <button id="copy-btn" class="btn-primary btn-large" data-i18n="s7_copy">Copiar al portapapeles</button>
+                <p id="copy-confirm" class="hidden" data-i18n="s7_copied">Copiado!</p>
+
+                <div class="where-to-use">
+                    <h3 data-i18n="s7_where">Donde lo pego?</h3>
+                    <ul>
+                        <li><a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> - <span data-i18n="s7_claude">Abre una conversacion nueva y pega el texto como primer mensaje</span></li>
+                        <li><a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a> - <span data-i18n="s7_chatgpt">Abre un chat nuevo y pega el texto</span></li>
+                        <li><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> - <span data-i18n="s7_gemini">Inicia una conversacion y pega el texto</span></li>
+                    </ul>
+                </div>
+
+                <button id="restart-btn" class="btn-secondary" data-i18n="s7_restart">Crear otro asistente</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>UnderRepresented Agents - <a href="https://github.com/ratalie/UnderRepresentedAgents" target="_blank" rel="noopener">GitHub</a></p>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="wizard.js"></script>
+</body>
+</html>
