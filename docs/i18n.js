@@ -76,8 +76,13 @@ const translations = {
         acc_step_by_step: "Paso a paso",
         acc_low_overwhelm: "Poca información",
         acc_none: "Ninguna",
+        // Next level
+        next_title: "¿Quieres ir más allá?",
+        next_desc: "Tenemos recursos gratuitos para que puedas hacer más: agentes pre-configurados, sesiones guiadas y una comunidad. Como los recursos son limitados, nos registramos para que alcancen para todos.",
+        next_cta: "Quiero participar",
+        next_note: "Es gratis. Solo pedimos tu nombre y correo para poder organizarnos.",
         // Footer
-        footer_project: "Un proyecto de <a href=\"https://github.com/ratalie\" target=\"_blank\" rel=\"noopener\">ratalie</a>",
+        footer_project: "De Natalie Gil para la comunidad",
         footer_star: "⭐ Dale estrella al proyecto en GitHub",
         footer_follow: "Sígueme en GitHub",
         footer_bio: "MIT Sloan Fellow · Diversity Advocate · Founder @LatinityConf",
@@ -156,8 +161,13 @@ const translations = {
         acc_step_by_step: "Step by step",
         acc_low_overwhelm: "Less information",
         acc_none: "None",
+        // Next level
+        next_title: "Want to go further?",
+        next_desc: "We have free resources so you can do more: pre-configured agents, guided sessions, and a community. Since resources are limited, we ask you to sign up so there's enough for everyone.",
+        next_cta: "I want to participate",
+        next_note: "It's free. We only ask your name and email so we can organize.",
         // Footer
-        footer_project: "A project by <a href=\"https://github.com/ratalie\" target=\"_blank\" rel=\"noopener\">ratalie</a>",
+        footer_project: "From Natalie Gil for the community",
         footer_star: "⭐ Star the project on GitHub",
         footer_follow: "Follow me on GitHub",
         footer_bio: "MIT Sloan Fellow · Diversity Advocate · Founder @LatinityConf",
@@ -236,8 +246,13 @@ const translations = {
         acc_step_by_step: "Passo a passo",
         acc_low_overwhelm: "Pouca informação",
         acc_none: "Nenhuma",
+        // Next level
+        next_title: "Quer ir além?",
+        next_desc: "Temos recursos gratuitos pra você fazer mais: agentes pré-configurados, sessões guiadas e uma comunidade. Como os recursos são limitados, pedimos que se registre pra que dê pra todos.",
+        next_cta: "Quero participar",
+        next_note: "É de graça. Só pedimos seu nome e email pra gente se organizar.",
         // Footer
-        footer_project: "Um projeto de <a href=\"https://github.com/ratalie\" target=\"_blank\" rel=\"noopener\">ratalie</a>",
+        footer_project: "Da Natalie Gil pra comunidade",
         footer_star: "⭐ Dá uma estrela no projeto no GitHub",
         footer_follow: "Me segue no GitHub",
         footer_bio: "MIT Sloan Fellow · Diversity Advocate · Founder @LatinityConf",
