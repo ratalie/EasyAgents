@@ -304,14 +304,47 @@ textarea:focus {
 /* === FOOTER === */
 footer {
     text-align: center;
-    padding: 32px 24px;
+    padding: 48px 24px 32px;
     color: #78716c;
-    font-size: 14px;
+    font-size: 15px;
     border-top: 1px solid var(--border);
     margin-top: 48px;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--accent) 100%);
 }
-footer a { color: var(--primary); text-decoration: none; }
+footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
 footer a:hover { text-decoration: underline; }
+
+.footer-cta {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #24292e;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+}
+.btn-github:hover { background: #444d56; text-decoration: none; color: white; }
+.btn-github:active { transform: scale(0.98); }
+.btn-github-follow { background: var(--primary); }
+.btn-github-follow:hover { background: var(--primary-hover); }
+
+.footer-license {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #a8a29e;
+}
 
 /* === RESPONSIVE === */
 @media (max-width: 600px) {

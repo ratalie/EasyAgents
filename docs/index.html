@@ -80,6 +80,7 @@
                 </div>
                 <textarea id="problem-input" rows="4" placeholder="" data-i18n-placeholder="s2_placeholder" aria-label="Describe el problema que quieres resolver"></textarea>
                 <button class="btn-primary wizard-next" data-i18n="next_btn">Siguiente</button>
+            </div>
 
             <!-- Step 3: Personality -->
             <div class="wizard-step" data-step="3">
@@ -153,7 +154,12 @@
     </main>
 
     <footer>
-        <p>UnderRepresented Agents - <a href="https://github.com/ratalie/UnderRepresentedAgents" target="_blank" rel="noopener">GitHub</a></p>
+        <p data-i18n="footer_project">Un proyecto de <a href="https://github.com/ratalie" target="_blank" rel="noopener">ratalie</a></p>
+        <div class="footer-cta">
+            <a href="https://github.com/ratalie/UnderRepresentedAgents" target="_blank" rel="noopener" class="btn-github" data-i18n="footer_star">⭐ Dale estrella al proyecto en GitHub</a>
+            <a href="https://github.com/ratalie" target="_blank" rel="noopener" class="btn-github btn-github-follow" data-i18n="footer_follow">Sígueme en GitHub</a>
+        </div>
+        <p class="footer-license">MIT License · 2026</p>
     </footer>
 
     <script src="i18n.js"></script>

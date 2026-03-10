@@ -74,8 +74,12 @@ const translations = {
         acc_screen_reader: "Lector de pantalla",
         acc_simple_language: "Lenguaje simple",
         acc_step_by_step: "Paso a paso",
-        acc_low_overwhelm: "Poca informacion",
+        acc_low_overwhelm: "Poca información",
         acc_none: "Ninguna",
+        // Footer
+        footer_project: "Un proyecto de <a href=\"https://github.com/ratalie\" target=\"_blank\" rel=\"noopener\">ratalie</a>",
+        footer_star: "⭐ Dale estrella al proyecto en GitHub",
+        footer_follow: "Sígueme en GitHub",
     },
 
     en: {
@@ -151,6 +155,10 @@ const translations = {
         acc_step_by_step: "Step by step",
         acc_low_overwhelm: "Less information",
         acc_none: "None",
+        // Footer
+        footer_project: "A project by <a href=\"https://github.com/ratalie\" target=\"_blank\" rel=\"noopener\">ratalie</a>",
+        footer_star: "⭐ Star the project on GitHub",
+        footer_follow: "Follow me on GitHub",
     },
 
     pt: {
@@ -226,6 +234,10 @@ const translations = {
         acc_step_by_step: "Passo a passo",
         acc_low_overwhelm: "Pouca informacao",
         acc_none: "Nenhuma",
+        // Footer
+        footer_project: "Um projeto de <a href=\"https://github.com/ratalie\" target=\"_blank\" rel=\"noopener\">ratalie</a>",
+        footer_star: "⭐ Dá uma estrela no projeto no GitHub",
+        footer_follow: "Me segue no GitHub",
     }
 };
 
