@@ -2,14 +2,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --bg: #fafaf9;
-    --text: #1c1917;
-    --primary: #7c3aed;
-    --primary-hover: #6d28d9;
-    --accent: #f5f3ff;
+    --bg: #ffffff;
+    --text: #1a1a2e;
+    --primary: #DC143C;
+    --primary-hover: #b91030;
+    --accent: #fef2f2;
     --card-bg: #ffffff;
-    --border: #e7e5e4;
+    --border: #e5e5e5;
     --success: #16a34a;
+    --teal: #4A90A4;
     --radius: 12px;
     --shadow: 0 1px 3px rgba(0,0,0,0.08);
     --shadow-lg: 0 4px 12px rgba(0,0,0,0.1);
@@ -48,6 +49,7 @@ body {
     padding: 12px;
     background: var(--card-bg);
     border-bottom: 1px solid var(--border);
+    border-top: 3px solid var(--primary);
 }
 
 .lang-btn {
@@ -71,7 +73,8 @@ body {
 .hero {
     text-align: center;
     padding: 80px 24px 60px;
-    background: linear-gradient(135deg, var(--accent) 0%, #ede9fe 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, #fde8e8 100%);
+    border-bottom: 3px solid var(--primary);
 }
 
 .hero h1 {
@@ -235,7 +238,7 @@ textarea {
 textarea:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(124,58,237,0.15);
+    box-shadow: 0 0 0 3px rgba(220,20,60,0.15);
 }
 
 .examples {
@@ -261,9 +264,10 @@ textarea:focus {
 
 /* === RESULT === */
 .result-box {
-    background: #1e1b2e;
+    background: #1a1a2e;
     color: #e2e8f0;
     border-radius: var(--radius);
+    border-left: 4px solid var(--primary);
     padding: 24px;
     margin: 20px 0;
     font-family: 'Cascadia Code', 'Fira Code', monospace;
@@ -313,6 +317,36 @@ footer {
 }
 footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
 footer a:hover { text-decoration: underline; }
+
+.footer-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.footer-avatar {
+    border-radius: 50%;
+    border: 3px solid var(--teal);
+    transition: transform 0.2s;
+}
+.footer-avatar:hover { transform: scale(1.08); }
+
+.footer-author-info { text-align: left; }
+
+.footer-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.footer-bio {
+    font-size: 14px;
+    color: #78716c;
+    margin: 4px 0 0;
+}
 
 .footer-cta {
     display: flex;
@@ -365,7 +399,7 @@ footer a:hover { text-decoration: underline; }
     :root {
         --border: #000;
         --text: #000;
-        --primary: #4c1d95;
+        --primary: #a00020;
     }
     .option-btn { border-width: 3px; }
 }

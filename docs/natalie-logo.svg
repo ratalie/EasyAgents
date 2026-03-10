@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue background circle -->
+  <circle cx="100" cy="100" r="100" fill="#4A90A4"/>
+  
+  <!-- Face -->
+  <ellipse cx="100" cy="120" rx="45" ry="50" fill="#D2691E"/>
+  
+  <!-- Hair -->
+  <path d="M55 80 Q55 50 100 50 Q145 50 145 80 Q145 100 140 120 Q135 140 125 150 L75 150 Q65 140 60 120 Q55 100 55 80 Z" fill="#2F2F2F"/>
+  
+  <!-- Glasses -->
+  <circle cx="85" cy="105" r="12" fill="none" stroke="#DC143C" stroke-width="3"/>
+  <circle cx="115" cy="105" r="12" fill="none" stroke="#DC143C" stroke-width="3"/>
+  <line x1="97" y1="105" x2="103" y2="105" stroke="#DC143C" stroke-width="3"/>
+  
+  <!-- Eyes (closed/happy) -->
+  <path d="M80 105 Q85 100 90 105" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M110 105 Q115 100 120 105" fill="none" stroke="#000" stroke-width="2"/>
+  
+  <!-- Nose -->
+  <ellipse cx="100" cy="115" rx="2" ry="3" fill="#B8860B"/>
+  
+  <!-- Smile -->
+  <path d="M85 125 Q100 135 115 125" fill="none" stroke="#8B4513" stroke-width="2"/>
+  <path d="M90 128 Q100 133 110 128" fill="#FFF"/>
+  
+  <!-- Earrings -->
+  <circle cx="70" cy="115" r="4" fill="#FFF"/>
+  <circle cx="130" cy="115" r="4" fill="#FFF"/>
+  
+  <!-- Blazer/Jacket -->
+  <path d="M70 150 L70 180 Q70 190 80 190 L120 190 Q130 190 130 180 L130 150 Q125 145 115 145 L85 145 Q75 145 70 150 Z" fill="#A9A9A9"/>
+  
+  <!-- Blazer lapels -->
+  <path d="M70 150 L85 160 L85 145 Q75 145 70 150 Z" fill="#808080"/>
+  <path d="M130 150 L115 160 L115 145 Q125 145 130 150 Z" fill="#808080"/>
+  
+  <!-- Shirt/Top -->
+  <rect x="85" y="145" width="30" height="45" fill="#2F2F2F"/>
+</svg>
